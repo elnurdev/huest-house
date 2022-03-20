@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House</title>
+    <!-- fons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- tailwindcss -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+        .container { max-width: 1169px; }
+        .font-m { font-family: 'Montserrat', sans-serif; }
+        .text-sml { font-size: 15px; line-height: 20px; }
+        .text-3xl { font-size: 32px; line-height: 36px; }
+        .bg-dark-white { background: #FAF8F0; }
+        .text-dark-white { color: #FAF8F0; }
+        .bg-green { background: #52503B; }
+        .text-green { color: #52503B; }
+        .bg-orange { background: #E08631; }
+        .text-orange { color: #E08631; }
+        .bg-black { background: #333; }
+        .border-l-2 { border-left: 2px solid #E08631; }
+        .border-green { border: 1px solid #52503B; }
+        .text-black { color: #333; }
+        .btn-p { padding: 10px 18px 7px 17px; }
+        .letter-2 { letter-spacing: 2px; }
+        img { display: inline-block; }
+        input::placeholder { font-size: 14px; line-height: 20px; color: #52503B; }
+        .carousel { width: 100%; display: flex; justify-content: left; align-items: start; overflow-x: auto; position: relative; }
+        .blog { min-width: 584px; position: relative; transition: all 0.5s ease 0s; margin: 0 30px 0 0; border-radius: 5px; }
+        .carousel::-webkit-scrollbar { visibility: hidden; }
+    </style>
+</head>
+<body class="font-m text-black">
+    <header class="bg-green" style="padding: 8px 0 17px 0;">
+        <div class="container mx-auto" style="max-width: 1198px;">
+            <div class="flex items-center justify-between">
+                <div>
+                    <img src="./img/logo.svg" alt="Guest House">
+                </div>
+                <ul class="flex items-center">
+                    <li class="text-sml text-white hover:opacity-60 cursor-pointer transition">Start</li>
+                    <li class="text-sml text-white px-6 hover:opacity-60 cursor-pointer transition">Contact</li>
+                    <li class="text-sml text-white hover:opacity-60 cursor-pointer transition">Our history</li>
+                </ul>
+                <button class="bg-white rounded-md text-green btn-p hover:opacity-60 transition">Book now</button>
+            </div>
+        </div>
+    </header>
+    <section style="height: 730px;">
+        <div class="absolute" style="z-index:-1 ; height: 730px; width: 100%;">
+            <div style="background: url('./img/guest-house.png') no-repeat center transparent; background-size: cover; background-attachment: fixed; height: 730px;"></div>
+        </div>
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="text-center" style="padding: 178px 0 39px 0;">
+                    <img src="./img/logo-big.svg" alt="Guest House">
+                </div>
+                <div class="text-5xl text-white">Experience the perfect combination of modern housing & natural scenery.</div>
+                <div class="text-white text-sm uppercase opacity-80" style="letter-spacing: 2px; padding: 39px 0 113px 0;">Located in Lofoten, norway</div>
+                <img src="./img/mouse.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-white" style="padding: 100px 0 89px 0;">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 0px 0 27px 0;"></div>
+            </div>
+            <div class="flex justify-between" style="max-width: 768px; margin: 0 auto;">
+                <div style="width: 360px;">
+                    <div class="text-sm text-black">The Guest House is the perfect weekend get-away housing. Located in the Norwegian archipelago, Lofoten, it's a great escape from the hustle and bustle of the city. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</div>
+                </div>
+                <div style="width: 368px;">
+                    <div class="text-sm text-black">Below you'll find information about the accommodation and what's included in the price. Don't hesitate to reach out to us vi the contact page if you have any questions around your stay.</div>
+                    <button class="bg-green text-sm rounded-md text-white hover:opacity-60 transition" style="padding: 10px 18px; margin-top: 41px;">Book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 100px 0 24px 0;"></div>
+            </div>
+            <div class="text-8xl text-center text-green font-bold">The Guest House is the perfect weekend getaway cabin.</div>
+        </div>
+        <div style="margin-top: 138px; height: 603px; width: 100%;">
+            <div style="background: url('./img/kitchen.png') no-repeat center transparent; background-size: cover; background-attachment: fixed; height: 603px;"></div>
+        </div>
+    </section>
+    <section style="padding: 0px 0 99px 0;">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 100px 0 23px 0;"></div>
+            </div>
+            <div class="text-center text-3xl text-green">Sleeping arrangements.</div>
+            <div class="text-base text-center text-green" style="max-width: 554px; margin: 14px auto 30px auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.</div>
+            <div class="flex justify-between">
+                <div class="text-center" style="width: 375px;">
+                    <img src="./img/beeds.svg" alt="Beeds">
+                    <div class="text-green text-base mb-px mt-3">Beds</div>
+                    <div class="text-green text-sm">The cabin is equipped with 12 beds, 4 of which <br> are in bunk. The rent includes linens for all beds.</div>
+                </div>
+                <div class="text-center" style="width: 375px;">
+                    <img src="./img/beedrooms.svg" alt="Beedrooms">
+                    <div class="text-green text-base mb-px mt-3">Bedrooms</div>
+                    <div class="text-green text-sm">Spread out over two floors, the cabin offers 4 bedrooms. Ranging from 2 to 4 beds per room.</div>
+                </div>
+                <div class="text-center" style="width: 375px;">
+                    <img src="./img/beethrooms.svg" alt="Beethrooms">
+                    <div class="text-green text-base mb-px mt-3">Bathrooms</div>
+                    <div class="text-green text-sm">The cabin has three bathrooms, all equipped <br> with showers and one with a bath tub,</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 0px 0 109px 0;">
+        <div class="container mx-auto">
+            <div>
+                <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 100px 0 23px 0;"></div>
+            </div>
+            <div class="text-3xl text-green">The perfect escape.</div>
+            <div class="text-base text-green max-w-xl" style="margin: 14px 0 30px 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur.</div>
+            <div class="flex justify-between">
+                <div style="width: 545px">
+                    <div class="flex items-start" style="height: 81px;">
+                        <img src="./img/blog-img-1.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Modern Kitchen Appliances</div>
+                            <div class="text-sm text-green">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 81px;">
+                        <img src="./img/blog-img-2.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Outdoor Paths</div>
+                            <div class="text-sm text-green">Nulla rhoncus feugiat eros quis consectetur.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 103px;">
+                        <img src="./img/blog-img-3.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Coffee Maker</div>
+                            <div class="text-sm text-green">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 81px;">
+                        <img src="./img/blog-img-4.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Natural Scenery</div>
+                            <div class="text-sm text-green">Cras commodo consequat orci, in convallis risus egestas non.</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 569px">
+                    <div class="flex items-start" style="height: 81px;">
+                        <img src="./img/blog-img-5.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Air Conditioner</div>
+                            <div class="text-sm text-green">Nullam scelerisque aliquam odio et faucibus.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 82px;">
+                        <img src="./img/blog-img-6.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Storage Solutions</div>
+                            <div class="text-sm text-green">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 102px;">
+                        <img src="./img/blog-img-7.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Cutlery Selection</div>
+                            <div class="text-sm text-green">Duis tristique sed lorem a vestibulum.</div>
+                        </div>
+                    </div>
+                    <div class="flex items-start" style="height: 81px;">
+                        <img src="./img/blog-img-8.svg" alt="">
+                        <div class="ml-4">
+                            <div class="text-sm text-green">Take-away Options</div>
+                            <div class="text-sm text-green">Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-white">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 81px 0 22px 0;"></div>
+            </div>
+            <div class="text-3xl text-center text-green">Past guests.</div>
+            <div class="text-base text-center text-green max-w-xl mx-auto" style="padding: 14px 0 30px 0;">Don't take our word for it! Have a look at what our previous guests say about their stay at the Guest House.</div>
+            <div class="flex items-start carousel">
+                <div class="bg-white rounded blog" style="width: 584px; padding: 33px 47px 30px 29px; border: 1px solid rgba(82, 80, 59, 0.1);">
+                    <div class="flex">
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                    </div>
+                    <div class="text-lg" style="margin: 5px 0 9px 0">We had an amazing stay at the Guest House!</div>
+                    <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+                    <div class="border-l-2 pl-2.5 text-sm" style="margin-top:19px;">Nate Davidsson</div>
+                </div>
+                <div class="bg-white rounded blog" style="width: 584px; padding: 29px 47px 30px 20px; border: 1px solid rgba(82, 80, 59, 0.1);">
+                    <div class="flex">
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    </div>
+                    <div class="text-lg" style="margin: 5px 0 9px 0">Beautiful little hideaway.</div>
+                    <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</div>
+                    <div class="border-l-2 pl-2.5 text-sm" style="margin-top:19px;">Laura Paulie</div>
+                </div>
+                <div class="bg-white rounded blog" style="width: 584px;padding: 29px 47px 30px 20px; border: 1px solid rgba(82, 80, 59, 0.1);">
+                    <div class="flex">
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    </div>
+                    <div class="text-lg" style="margin: 5px 0 9px 0">Best vacation ever!</div>
+                    <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</div>
+                    <div class="border-l-2 pl-2.5 text-sm" style="margin-top:19px;">Greg Todd</div>
+                </div>
+                <div class="bg-white rounded blog" style="width: 584px; padding: 29px 47px 30px 20px; border: 1px solid rgba(82, 80, 59, 0.1);">
+                    <div class="flex">
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    </div>
+                    <div class="text-lg" style="margin: 5px 0 9px 0">We had an amazing stay at the Guest House!</div>
+                    <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+                    <div class="border-l-2 pl-2.5 text-sm" style="margin-top:19px;">Nate Davidsson</div>
+                </div>
+                <div class="bg-white rounded blog" style="width: 584px; padding: 29px 47px 30px 20px; border: 1px solid rgba(82, 80, 59, 0.1);">
+                    <div class="flex">
+                        <svg class="text-green" style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                        <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                    </div>
+                    <div class="text-lg" style="margin: 5px 0 9px 0">Beautiful little hideaway.</div>
+                    <div class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.</div>
+                    <div class="border-l-2 pl-2.5 text-sm" style="margin-top:19px;">Laura Paulie</div>
+                </div>
+            </div>
+            <div class="text-right" style="padding: 2px 0 64px 0;">
+                <div class="arrow inline-block rounded-full cursor-pointer" style="width: 60px; height: 60px; margin-right: 7px; border: 2px solid #52503B;"></div>
+                <div class="arrow inline-block rounded-full cursor-pointer" style="width: 60px; height: 60px; border: 2px solid #52503B;"></div>
+            </div>
+        </div>
+        <div style="height: 603px; width: 100%;">
+            <div style="background: url('./img/beedroom.png') no-repeat center transparent; background-size: cover; background-attachment: fixed; height: 603px;"></div>
+        </div>
+    </section>
+    <section style="padding: 96px 0 99px 0">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <div>
+                    <div>
+                        <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 9px 0 25px 0;"></div>
+                    </div>
+                    <div class="text-3xl text-green">Come together.</div>
+                    <div class="text-base text-green max-w-lg" style="padding-top: 14px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</div>
+                </div>
+                <div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center" style="width: 293px;">
+                            <img src="./img/wi-fi.svg" alt="wi-fi">
+                            <div class="text-sm text-green pl-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                        </div>
+                        <div class="flex items-center" style="width: 260px;">
+                            <img src="./img/bread.svg" alt="bread">
+                            <div class="text-sm text-green pl-4">Nullam scelerisque aliquam odio et faucibus.</div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex items-center" style="width: 293px; margin-top: 60px;">
+                            <img src="./img/scales.svg" alt="scales">
+                            <div class="text-sm text-green pl-4">Nulla rhoncus feugiat eros quis consectetur.</div>
+                        </div>
+                        <div class="flex items-center" style="width: 260px; margin-top: 60px;">
+                            <img src="./img/fork.svg" alt="fork">
+                            <div class="text-sm text-green pl-4">Morbi neque ex, condimentum.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark-white" style="padding: 100px 0;">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <div>
+                    <div class="h-2 bg-orange inline-block" style="width: 42px; margin: 21px 0 23px 0;"></div>
+                </div>
+                <div class="text-3xl text-green max-w-xl mx-auto">We're already booked up for the spring — hurry up & secure your stay for the summer.</div>
+                <div class="text-gray text-base max-w-lg mx-auto" style="padding: 14px 0 18px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</div>
+                <div class="flex justify-center">
+                    <button class="bg-white rounded-md text-green btn-p hover:opacity-60 transition" style="border: 4px solid #52503B; padding: 10px 26px; margin-right: 20px;">Contact</button>
+                    <button class="bg-green rounded-md text-white btn-p hover:opacity-60 transition" style="padding: 14px 26px;">book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-green" style="padding: 100px 0 110px 0;">
+        <div class="container mx-auto">
+            <div class="flex justify-between">
+                <ul>
+                    <li class="letter-2 text-sm text-white uppercase opacity-80">Pages</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Start</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Contact</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Our history</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Licenses</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Instructions</li>
+                    <li class="text-sm text-white pt-2.5 opacity-80">Style guide</li>
+                </ul>
+                <div class="flex">
+                    <div style="width: 297px">
+                        <div class="letter-2 text-sm text-white uppercase opacity-80">Social Media</div>
+                        <div class="flex" style="padding: 20px 0 0 0;">
+                            <a href="#"><img src="./img/a.svg" alt=""></a>
+                            <a style="padding: 0 20px;" href="#"><img src="./img/facebook.svg" alt=""></a>
+                            <a href="https://instagram.com/dev.elnur"><img src="./img/instagram.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div style="width: 576px">
+                        <div class="letter-2 text-sm text-white uppercase opacity-80 pb-px">Newsletter</div>
+                        <div class="text-sm text-white opacity-80 pb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</div>
+                        <div class="flex items-center">
+                            <input type="email" class="bg-white w-full text-green rounded-lg border-0" style="padding: 15px 0 15px 30px;" placeholder="Email">
+                            <button class="bg-green text-base rounded-md text-white hover:opacity-60 transition" style="margin-left: -67px;">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-12 text-center">
+                <img src="./img/logo-big.svg" alt="Guest House" style="width: 200px;">
+                <div class="text-sm text-white opacity-80" style="padding: 20px 0;">© Guest House, LLC. All rights reserved. Powered by Webflow</div>
+                <div class="text-sm text-white opacity-80"><a class="hover:underline" href="+47(0)702881234">+47 (0) 702 88 12 34</a> — <a class="hover:underline" href="example@webflow.io">example@webflow.io</a> — Klubbvika 12, 8310 Kabelvag, Norway</div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
